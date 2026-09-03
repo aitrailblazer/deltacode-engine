@@ -1,0 +1,36 @@
+{
+  "schema_version": "deltacode.historical-summary.v1",
+  "date": "2026-09-02",
+  "scope": "25 frozen intent-to-symbol cases from one private Go repository",
+  "publicly_reproducible": false,
+  "systems": [
+    {
+      "name": "DeltaCode structural ranker",
+      "recall_at_1": 0.72,
+      "recall_at_5": 0.92,
+      "symbol_exact_at_5": 0.80,
+      "p95_milliseconds": 169
+    },
+    {
+      "name": "zvec-grep with Jina, vector route",
+      "recall_at_1": 0.08,
+      "recall_at_5": 0.48,
+      "symbol_exact_at_5": 0.00,
+      "p95_milliseconds": 401
+    },
+    {
+      "name": "zvec-grep with Potion, best path route",
+      "recall_at_1": 0.08,
+      "recall_at_5": 0.40,
+      "symbol_exact_at_5": 0.16,
+      "p95_milliseconds": 687
+    }
+  ],
+  "limitations": [
+    "The source repository and task definitions are private.",
+    "The source state was a manifest-bound dirty worktree snapshot.",
+    "The suite contains only 25 cases from one Go-heavy product.",
+    "The result does not establish universal superiority over vector retrieval.",
+    "A clean public cross-repository suite is required for independent reproduction."
+  ]
+}

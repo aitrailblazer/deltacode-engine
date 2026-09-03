@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+*.exe
+*.test
+*.out
+
+# Internal specifications & proprietary IP (STRICTLY EXCLUDED FROM PUBLIC REPO)
+docs/StrategiX_*.html
+docs/HACKERNEWS_SUBMISSION.md
+docs/internal/
+*.secret
+*.private
+
+# Research and confidential launch strategies (STRICTLY EXCLUDED FROM PUBLIC REPO)
+research/
+docs/research/
